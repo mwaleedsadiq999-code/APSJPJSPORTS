@@ -55,7 +55,7 @@ export default function Squad() {
       >
         {shown.map((p, i) => (
           <article
-            key={p.name}
+            key={p.number}
             className="card"
             style={{ '--i': i, '--from': i % 2 === 0 ? '-38px' : '38px' }}
           >

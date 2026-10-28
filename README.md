@@ -22,7 +22,7 @@ Change any name, role, discipline or photo there and the whole site updates.
 
 ```js
 export const squad = [
-  { number: '01', name: 'Umer Shabir', role: 'Captain', discipline: 'All-rounder', style: 'Right hand · Off spin' },
+  { number: '01', name: 'Umer Shabir', role: 'Captain', discipline: 'Batsman', style: 'Right hand · Off spin' },
   // ...
 ]
 ```
@@ -32,7 +32,7 @@ export const squad = [
 | `number` | The big index shown top-left of the card |
 | `name` | Player's display name |
 | `role` | `Player`, `Captain` or `Vice Captain` — drives the badge |
-| `discipline` | `Batter`, `Bowler`, `All-rounder` or `Wicketkeeper` — drives the filter |
+| `discipline` | `Batsman`, `Bowler`, `All-rounder` or `Wicketkeeper` — must match a filter in `Squad.jsx` |
 | `style` | Small line under the name, e.g. "Right arm fast" |
 
 ### Adding or removing a player
@@ -59,6 +59,8 @@ public/assets/
   aps-logo.jpg    Club crest — navbar, footer, favicon
   captains.jpg    Captain & vice captain portrait (split across the two leader cards)
   team.png        Full squad group photo
+raw/
+  captains.png    Full-size original (not deployed — keeps the build small)
 src/
   components/
     Navbar.jsx      Sticky header + mobile menu
@@ -86,8 +88,7 @@ Colours and radii live as CSS custom properties at the top of
 --muted:  #5c594d;   /* secondary text — 6.4:1 on paper */
 --muted-2:#6e6a5c;   /* small labels — 4.9:1 on paper */
 --claret: #9c2c25;   /* the single accent colour */
---dark:   #17150f;   /* the leaders / footer ground */
---cream-2:#a9a594;   /* muted text on dark — 7.4:1 */
+--cream-2:#a9a594;   /* muted text on the dark footer — 7.4:1 */
 --r-ui:   2px;       /* buttons, badges, pills */
 --r-media:14px;      /* photo frames, leader cards */
 ```

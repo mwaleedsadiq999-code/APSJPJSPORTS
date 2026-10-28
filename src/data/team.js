@@ -18,7 +18,7 @@ export const leaders = [
     name: 'Umer Shabir',
     role: 'Captain',
     discipline: 'Batsman',
-    style: 'Right hand Batsman Highest 89',
+    style: 'Right hand Batsman · Highest 89',
     photo: '/assets/captains.jpg',
     quote: 'Set the standard in training and the match takes care of itself.',
   },
@@ -36,18 +36,19 @@ export const leaders = [
 /** Full squad. `role` drives the leadership tag, `discipline` the filter. */
 export const squad = [
   { number: '01', name: 'Umer Shabir', role: 'Captain', discipline: 'Batsman', style: 'Right hand Batsman · Right hand Off spin' },
-  { number: '02', name: 'Muhammad Awais Maqsood', role: 'Vice Captain', discipline: 'Batter', style: 'Right Hand' },
+  { number: '02', name: 'Muhammad Awais Maqsood', role: 'Vice Captain', discipline: 'Batsman', style: 'Right Hand' },
   { number: '03', name: 'Yousaf Jan', role: 'Player', discipline: 'Bowler', style: 'Opening bowler' },
   { number: '04', name: 'Joel Adan', role: 'Player', discipline: 'Bowler', style: 'Right arm fast' },
   { number: '05', name: 'Ahmed', role: 'Player', discipline: 'Wicketkeeper', style: 'Right hand' },
-  { number: '06', name: 'Sameer', role: 'Player', discipline: 'Batter', style: 'Top order' },
+  { number: '06', name: 'Sameer', role: 'Player', discipline: 'Batsman', style: 'Top order' },
   { number: '07', name: 'Haji', role: 'Player', discipline: 'Batsman', style: 'Right hand' },
   { number: '08', name: 'Sameer', role: 'Player', discipline: 'All-rounder', style: 'Right hand' },
-  { number: '09', name: 'Daniyal Ahmed', role: 'Player', discipline: 'Batter', style: 'Middle order' },
+  { number: '09', name: 'Daniyal Ahmed', role: 'Player', discipline: 'Batsman', style: 'Middle order' },
   { number: '10', name: 'Farhan Nazir', role: 'Player', discipline: 'Bowler', style: 'Left arm spin' },
   { number: '11', name: 'Saad Raza', role: 'Player', discipline: 'Wicketkeeper', style: 'Right hand' },
-  { number: '12', name: 'Ahmed Munir', role: 'Player', discipline: 'Batsman', style: 'Right hand' }, 
+  { number: '12', name: 'Ahmed Munir', role: 'Player', discipline: 'Batsman', style: 'Right hand' },
 ]
+
 /** Season numbers shown in the stat band (count up when scrolled into view). */
 export const seasonStats = [
   // Derived, so the band can never disagree with the roster above.

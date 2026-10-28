@@ -11,7 +11,9 @@ export default function Hero() {
       <div className="hero-inner">
         <div className="hero-copy">
           <p className="hero-eyebrow">
-            {club.name} · Season {club.season}
+            <span className="hero-eyebrow-text">
+              {club.name} · <span className="hero-season">Season {club.season}</span>
+            </span>
           </p>
 
           <h1 className="hero-title">

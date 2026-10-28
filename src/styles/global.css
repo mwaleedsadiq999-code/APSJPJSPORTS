@@ -23,15 +23,11 @@
 
   /* --- accent: claret ------------------------------------------------- */
   --claret: #9c2c25;
-  --claret-2: #b33a30;
   --claret-ink: #7d211c;
   --claret-soft: rgba(156, 44, 37, 0.07);
-  --claret-3: #e07a6a; /* the readable claret for dark grounds */
+  --claret-3: #e07a6a; /* lighter claret for small type */
 
-  /* --- dark grounds --------------------------------------------------- */
-  --dark: #17150f;
-  --dark-2: #211e16;
-  --dark-line: rgba(255, 255, 255, 0.11);
+  /* --- support tints -------------------------------------------------- */
   --cream: #f7f4ed;
   --cream-2: #a9a594;
 
@@ -459,6 +455,15 @@ h3 {
   height: 1px;
   background: var(--claret);
   flex-shrink: 0;
+}
+
+/* The text is one flex item so the rule sits beside it; the season inside
+   stays unbroken when the line wraps on phones. */
+.hero-eyebrow-text {
+  min-width: 0;
+}
+.hero-season {
+  white-space: nowrap;
 }
 
 .hero-title {
@@ -1448,7 +1453,7 @@ h3 {
     padding-top: clamp(3rem, 8vw, 4.5rem);
   }
   .hero-figure {
-    justify-self: start;
+    justify-self: center;
     max-width: 420px;
   }
   .squad-grid {
